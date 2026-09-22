@@ -1,0 +1,28 @@
+{
+  "name": "mycapapp",
+  "version": "1.0.0",
+  "description": "Welcome to your new CAP project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-purchaseorderapp": "cds watch --open aman.capm.purchaseorderapp/index.html?sap-ui-xx-viewCache=false --livereload false"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@cap-js/sqlite": "^3.1.0",
+    "@sap/cds": "^10.1.0",
+    "express": "^5.2.1"
+  },
+  "workspaces": [
+    "app/*"
+  ],
+  "devDependencies": {
+    "cds-plugin-ui5": "^0.17.0"
+  },
+  "sapux": [
+    "app/purchaseorderapp"
+  ]
+}

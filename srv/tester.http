@@ -1,0 +1,27 @@
+###Service document
+http://localhost:4004/odata/v4/CatalogService/
+
+### Metadata
+http://localhost:4004/odata/v4/CatalogService/$metadata
+
+###Employeedata
+http://localhost:4004/odata/v4/CatalogService/EmployeeSet
+
+### get single e,mployeee data
+http://localhost:4004/odata/v4/CatalogService/EmployeeSet/02BD2137-0890-1EEA-A6C2-BB55C19787FB
+
+###total count of employee
+http://localhost:4004/odata/v4/CatalogService/EmployeeSet/$count
+
+###get with few field
+http://localhost:4004/odata/v4/CatalogService/EmployeeSet?$select=nameFirst,phoneNumber
+
+###pagination 
+http://localhost:4004/odata/v4/CatalogService/EmployeeSet?$top=2&$skip=2
+
+###filter
+http://localhost:4004/odata/v4/CatalogService/EmployeeSet?$filter=bankName eq 'My Bank of San Francisco'
+
+###Generichandler
+http://localhost:4004/odata/v4/myservice/ReadEmployeeSrv
+
